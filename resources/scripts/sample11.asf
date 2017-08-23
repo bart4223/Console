@@ -1,0 +1,8 @@
+//Echo off
+Console.EchoOff
+// Addition
+Base.add 4 2
+// Substraction
+Base.sub 4 2
+// Negation
+Base.neg 42

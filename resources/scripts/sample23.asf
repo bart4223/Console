@@ -1,0 +1,8 @@
+// Store result in a variable "Test"
+Base.add 4.0 2.0 => Test
+// Use stored variable "Test" for substraction
+Base.sub :Test 2.0 => Test
+// Use stored variable "Test" for negation
+Base.neg :Test => Test
+// Show variable "Test"
+Console.ShowVariable Test

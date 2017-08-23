@@ -1,0 +1,5 @@
+// Add Console
+Application.addmodule Uniwork.Appl.NGConsoleApplicationModule Test
+// Test
+Testconsole.test
+

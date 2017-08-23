@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.7.0_25" class="java.beans.XMLDecoder">
+ <object class="Uniwork.Appl.NGConsoleDefinition">
+  <void property="commands">
+   <object class="java.util.ArrayList">
+    <void method="add">
+     <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
+      <void property="Command">
+       <string>Console.showvariables</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
+      <void property="Command">
+       <string>console.runscript resources/scripts/sample03.asf</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
+      <void property="Command">
+       <string>console.runscript resources/scripts/sample23.asf</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
+      <void property="Command">
+       <string>console.runscript resources/scripts/sample32.asf</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+ </object>
+</java>

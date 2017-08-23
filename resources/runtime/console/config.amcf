@@ -1,0 +1,7 @@
+DefinitionFilename=resources/runtime/console/definition.amdf
+LogDescending=false
+ShowCommandArea=true
+Width=1000
+Height=600
+PosX=840
+PosY=420

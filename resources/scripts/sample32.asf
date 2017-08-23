@@ -1,0 +1,12 @@
+// Defines a variable
+Base.let "Hello world" => Msg
+// Show Variables
+Console.showvariables
+// Defines a variable
+Base.let " and cool boy" => Msg2
+// Show Variables
+Console.showvariables
+// Add two strings
+Base.addString :Msg :Msg2 => Msg3
+// Show Message
+Application.showmessage :Msg3

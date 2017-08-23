@@ -1,0 +1,4 @@
+// Show Application Help
+Application.Help
+// Quit Application
+Quit

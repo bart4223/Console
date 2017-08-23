@@ -1,0 +1,6 @@
+// Defines a variable
+Base.let 42 => Test
+// Adds with variables
+Base.add :Test :Test => Test
+// Show Variables
+Console.ShowVariables

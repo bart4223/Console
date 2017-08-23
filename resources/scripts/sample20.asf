@@ -1,0 +1,4 @@
+// Store result in a variable
+Base.add 4 2 => Sum
+// Show variables
+Console.ShowVariables

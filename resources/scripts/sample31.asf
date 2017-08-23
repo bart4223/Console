@@ -1,0 +1,6 @@
+// Defines a variable
+Base.let "Hello world" => Msg
+// Show Variables
+Console.showvariables
+// Show Message
+Application.showmessage :Msg
