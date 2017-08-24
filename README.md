@@ -1,5 +1,5 @@
 # Console
-This project demonstrate a powerfull console...
+This project demonstrates a powerfull console...
 
 # Resources
 
