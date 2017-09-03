@@ -18,7 +18,7 @@ public class Main extends NGApplication {
     @Override
     protected void registerObjectRequests() {
         super.registerObjectRequests();
-        registerObjectRequest("TestConsole", this, "Test", "TestTheBest", "\"This is a test method.\"");
+        registerObjectRequest("TestConsole", this, "Test", "TestTheBest", "This is a test method.");
     }
 
     public Main() {
