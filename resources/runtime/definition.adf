@@ -15,5 +15,44 @@
     </void>
    </object>
   </void>
+  <void property="scripts">
+   <object class="java.util.concurrent.CopyOnWriteArrayList">
+    <void method="add">
+     <object class="Uniwork.Appl.NGApplicationScriptItemDefinition">
+      <void property="Name">
+       <string>Show Message</string>
+      </void>
+      <void property="Filename">
+       <string>resources/scripts/sample33.asf</string>
+      </void>
+      <void property="Description">
+       <string>Show Message.</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="startups">
+   <object class="java.util.concurrent.CopyOnWriteArrayList">
+    <void method="add">
+     <object class="Uniwork.Appl.NGApplicationStartupItemDefinition">
+      <void property="Name">
+       <string>Show Message</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
+  <void property="shutdowns">
+   <object class="java.util.concurrent.CopyOnWriteArrayList">
+    <void method="add">
+     <object class="Uniwork.Appl.NGApplicationShutdownItemDefinition">
+      <void property="Name">
+       <string>Show Message</string>
+      </void>
+     </object>
+    </void>
+   </object>
+  </void>
  </object>
 </java>
