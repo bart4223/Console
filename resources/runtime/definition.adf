@@ -30,6 +30,19 @@
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="Uniwork.Appl.NGApplicationScriptItemDefinition">
+      <void property="Name">
+       <string>Calculate</string>
+      </void>
+      <void property="Filename">
+       <string>resources/scripts/sample10.asf</string>
+      </void>
+      <void property="Description">
+       <string>Calculate.</string>
+      </void>
+     </object>
+    </void>
    </object>
   </void>
   <void property="startups">
@@ -37,7 +50,7 @@
     <void method="add">
      <object class="Uniwork.Appl.NGApplicationStartupItemDefinition">
       <void property="Name">
-       <string>Show Message</string>
+       <string>Calculate</string>
       </void>
      </object>
     </void>
@@ -48,7 +61,7 @@
     <void method="add">
      <object class="Uniwork.Appl.NGApplicationShutdownItemDefinition">
       <void property="Name">
-       <string>Show Message</string>
+       <string>Calculate</string>
       </void>
      </object>
     </void>
