@@ -8,6 +8,7 @@ import java.util.Iterator;
 
 import static Uniwork.Misc.NGLogObject.CreateColorMessage;
 import static Uniwork.Misc.NGLogObject.CreateSimpleMessage;
+import static Uniwork.Misc.NGLogObject.CreateScriptMessage;
 
 public class Main extends NGApplication {
 
@@ -41,9 +42,11 @@ public class Main extends NGApplication {
     }
 
     public void TestLog() {
-        writeInfo(CreateSimpleMessage("Simple message...") );
-        writeInfo(CreateColorMessage("Color message...", "0000FF") );
-        writeInfo(CreateColorMessage("Color message...", "80FF80") );
+        writeInfo(CreateSimpleMessage("Simple message..."));
+        writeInfo(CreateColorMessage("Color message...", "0000FF"));
+        writeInfo(CreateScriptMessage("Script message...", "Application.ShowMessage Cool"));
+        writeInfo(CreateScriptMessage("Script color message...", "00FF00", "Color", "Application.ShowMessage \"Cool Color\""));
+        writeInfo(CreateColorMessage("Color message...", "FF0080"));
     }
 
     public static void main(String[] args) {
