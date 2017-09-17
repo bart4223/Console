@@ -31,6 +31,20 @@
       </void>
      </object>
     </void>
+    <void method="add">
+     <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
+      <void property="Command">
+       <string>Base.less 4 2 ?? Base.add 4 2</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
+      <void property="Command">
+       <string>Base.less 4 2 ?? Base.add 4 2 !! Base.sub 4 2</string>
+      </void>
+     </object>
+    </void>
    </object>
   </void>
  </object>
