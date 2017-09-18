@@ -1,6 +1,6 @@
 # Console
 
-This project demonstrates a powerfull console...
+This project demonstrates a powerful console...
 
 # Resources
 
@@ -23,5 +23,9 @@ This project demonstrates a powerfull console...
         -Simple console commands
     -sample3*.asf
         -Extended scripts             
+    -sample4*.asf
+        -Scripts with decisions                     
+    -sample5*.asf
+        -Scripts with gotos
 
     
