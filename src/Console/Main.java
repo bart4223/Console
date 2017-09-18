@@ -47,6 +47,7 @@ public class Main extends NGApplication {
         writeInfo(CreateScriptMessage("Script message...", "Application.ShowMessage Cool"));
         writeInfo(CreateScriptMessage("Script color message...", "00FF00", "Color", "Application.ShowMessage \"Cool Color\""));
         writeInfo(CreateColorMessage("Color message...", "FF0080"));
+        writeInfo(CreateScriptMessage("Script message exit...", "Application.Exit"));
     }
 
     public static void main(String[] args) {

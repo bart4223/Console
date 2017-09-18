@@ -1,0 +1,11 @@
+// Addition
+Base.add 2 4 => sum
+// Decision
+Base.less :sum 6 ?? >> 10 !! >> 6
+// Addition
+Base.add :sum 4 => sum
+// Goto
+>> 11
+// Substraction
+Base.sub :sum 3
+// End

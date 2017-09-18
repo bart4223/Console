@@ -1,0 +1,8 @@
+// Addition
+Base.add 2 4 => sum
+// Decision
+Base.less :sum 8 ?? >> 8 !! >> 6
+// Addition
+Base.add :sum 4 => sum
+// Substraction
+Base.sub :sum 3

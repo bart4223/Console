@@ -1,0 +1,2 @@
+// Decision
+Base.less 4 2 ?? Base.add 4 2 !! Base.sub 4 2

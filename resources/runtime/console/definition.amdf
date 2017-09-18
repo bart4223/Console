@@ -34,14 +34,21 @@
     <void method="add">
      <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
       <void property="Command">
-       <string>Base.less 4 2 ?? Base.add 4 2</string>
+       <string>console.runscript resources/scripts/sample40.asf</string>
       </void>
      </object>
     </void>
     <void method="add">
      <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
       <void property="Command">
-       <string>Base.less 4 2 ?? Base.add 4 2 !! Base.sub 4 2</string>
+       <string>console.runscript resources/scripts/sample41.asf</string>
+      </void>
+     </object>
+    </void>
+    <void method="add">
+     <object class="Uniwork.Appl.NGConsoleDefinitionCommandItem">
+      <void property="Command">
+       <string>console.runscript resources/scripts/sample50.asf</string>
       </void>
      </object>
     </void>
