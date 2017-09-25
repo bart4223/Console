@@ -3,6 +3,7 @@ package Console;
 import Uniwork.Appl.NGApplication;
 import Uniwork.Appl.NGCustomApplicationModule;
 import Uniwork.Appl.NGVisualApplicationModule;
+import Uniwork.Base.NGObjectRequestMethod;
 
 import java.util.Iterator;
 
@@ -22,8 +23,11 @@ public class Main extends NGApplication {
     @Override
     protected void registerObjectRequests() {
         super.registerObjectRequests();
-        registerObjectRequest("Application", this, "T", "TestTheBest", "This is a test the best method.");
-        registerObjectRequest("Application", this, "TL", "TestLog", "This is a test log method.");
+        NGObjectRequestMethod orm;
+        orm = registerObjectRequest("Application", this, "Test", "TestTheBest", "This is a test the best method.");
+        orm.setAlias("T");
+        orm = registerObjectRequest("Application", this, "TestLog", "TestLog", "This is a test log method.");
+        orm.setAlias("TL");
     }
 
     public Main() {
