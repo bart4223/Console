@@ -4,6 +4,7 @@ import Uniwork.Appl.NGApplication;
 import Uniwork.Appl.NGCustomApplicationModule;
 import Uniwork.Appl.NGVisualApplicationModule;
 import Uniwork.Base.NGObjectRequestMethod;
+import Uniwork.Misc.NGStrings;
 
 import java.text.DecimalFormat;
 import java.util.Iterator;
@@ -58,22 +59,14 @@ public class Main extends NGApplication {
     }
 
     public void TestgetDurationAsString() {
-        writeInfo(getDurationAsString(42));
-        writeInfo(getDurationAsString(120));
-        writeInfo(getDurationAsString(500));
-        writeInfo(getDurationAsString(3500));
-        writeInfo(getDurationAsString(3600));
-        writeInfo(getDurationAsString(3834));
+        writeInfo(NGStrings.getDurationAsString(42));
+        writeInfo(NGStrings.getDurationAsString(120));
+        writeInfo(NGStrings.getDurationAsString(500));
+        writeInfo(NGStrings.getDurationAsString(3500));
+        writeInfo(NGStrings.getDurationAsString(3600));
+        writeInfo(NGStrings.getDurationAsString(3834));
     }
-
-    protected static String getDurationAsString(Integer aDuration) {
-        double hh = Math.floor( aDuration / 3600 );
-        double mm = Math.floor( (aDuration%3600) / 60 );
-        double ss = Math.floor( aDuration%60 );
-        DecimalFormat format = new DecimalFormat("00");
-        return String.format("%s:%s:%s", format.format(hh), format.format(mm), format.format(ss));
-    }
-
+    
     public static void main(String[] args) {
         launch(args);
     }
