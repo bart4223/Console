@@ -4,6 +4,7 @@ import Uniwork.Appl.NGApplication;
 import Uniwork.Appl.NGCustomApplicationModule;
 import Uniwork.Appl.NGVisualApplicationModule;
 import Uniwork.Base.NGObjectRequestMethod;
+import Uniwork.Base.NGObjectRequestParameter;
 import Uniwork.Misc.NGStrings;
 
 import java.text.DecimalFormat;
@@ -32,6 +33,12 @@ public class Main extends NGApplication {
         orm.setAlias("TL");
         orm = registerObjectRequest("Application", this, "D", "TestgetDurationAsString", "Get Duration as String");
         orm.setAlias("TD");
+        orm = registerObjectRequest("Application", this, "ENC", "TestEncryption", "Encruption");
+        orm.setAlias("TENC");
+        orm.addParam("aPassword", NGObjectRequestParameter.ParamKind.String);
+        orm = registerObjectRequest("Application", this, "DEC", "TestDecryption", "Decruption");
+        orm.setAlias("TDEC");
+        orm.addParam("aPassword", NGObjectRequestParameter.ParamKind.String);
     }
 
     public Main() {
@@ -66,7 +73,15 @@ public class Main extends NGApplication {
         writeInfo(NGStrings.getDurationAsString(3600));
         writeInfo(NGStrings.getDurationAsString(3834));
     }
-    
+
+    public void TestEncryption(String aPassword) {
+        writeInfo(NGStrings.encryptPassword(aPassword));
+    }
+
+    public void TestDecryption(String aPassword) {
+        writeInfo(NGStrings.decryptPassword(aPassword));
+    }
+
     public static void main(String[] args) {
         launch(args);
     }
