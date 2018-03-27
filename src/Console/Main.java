@@ -35,10 +35,10 @@ public class Main extends NGApplication {
         orm.setAlias("TD");
         orm = registerObjectRequest("Application", this, "ENC", "TestEncryption", "Encruption");
         orm.setAlias("TENC");
-        orm.addParam("aPassword", NGObjectRequestParameter.ParamKind.String);
+        orm.addParam("aText", NGObjectRequestParameter.ParamKind.String);
         orm = registerObjectRequest("Application", this, "DEC", "TestDecryption", "Decruption");
         orm.setAlias("TDEC");
-        orm.addParam("aPassword", NGObjectRequestParameter.ParamKind.String);
+        orm.addParam("aText", NGObjectRequestParameter.ParamKind.String);
     }
 
     public Main() {
@@ -74,12 +74,12 @@ public class Main extends NGApplication {
         writeInfo(NGStrings.getDurationAsString(3834));
     }
 
-    public void TestEncryption(String aPassword) {
-        writeInfo(NGStrings.encryptPassword(aPassword));
+    public void TestEncryption(String aText) {
+        writeInfo(NGStrings.encryptText(aText));
     }
 
-    public void TestDecryption(String aPassword) {
-        writeInfo(NGStrings.decryptPassword(aPassword));
+    public void TestDecryption(String aText) {
+        writeInfo(NGStrings.decryptText(aText));
     }
 
     public static void main(String[] args) {
